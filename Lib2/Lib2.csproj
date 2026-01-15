@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>apple;banana</TargetFrameworks>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <SdkAnalysisLevel>10.0.200</SdkAnalysisLevel>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFrameworkIdentifier Condition=" '$(TargetFramework)' == 'apple' ">.NETCoreApp</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion Condition=" '$(TargetFramework)' == 'apple' ">v10.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetFrameworkIdentifier Condition=" '$(TargetFramework)' == 'banana' ">.NETCoreApp</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion Condition=" '$(TargetFramework)' == 'banana' ">v10.0</TargetFrameworkVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NuGet.Configuration" Version="6.4.20" Condition=" '$(TargetFramework)' == 'latestnet' "/>
+  </ItemGroup>
+
+</Project>
