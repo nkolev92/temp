@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>apple;banana</TargetFrameworks>
+    <TargetFrameworks>apple;banana;net46</TargetFrameworks>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <SdkAnalysisLevel>10.0.300</SdkAnalysisLevel>
@@ -18,8 +18,7 @@
 
 
   <ItemGroup>
-    <PackageReference Include="NuGet.Configuration" Version="6.4.20" Condition=" '$(TargetFramework)' == 'latestnet' "/>
-    <ProjectReference Include="..\Lib2\Lib2.csproj" />
+    <PackageReference Include="NuGet.Configuration" Version="6.4.20" Condition=" '$(TargetFramework)' == 'apple' " />
   </ItemGroup>
 
 </Project>
