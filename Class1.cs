@@ -1,4 +1,4 @@
-﻿namespace Lib1;
+﻿namespace temp;
 
 public class Class1
 {
