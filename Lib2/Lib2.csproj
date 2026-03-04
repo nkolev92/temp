@@ -4,7 +4,7 @@
     <TargetFrameworks>apple;banana</TargetFrameworks>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <SDKANalysisLevel>10.0.200</SDKANalysisLevel>
+    <SDKANalysisLevel>10.0.300</SDKANalysisLevel>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -13,7 +13,7 @@
   </PropertyGroup>
   <PropertyGroup>
     <TargetFrameworkIdentifier Condition=" '$(TargetFramework)' == 'banana' ">.NETCoreApp</TargetFrameworkIdentifier>
-    <TargetFrameworkVersion Condition=" '$(TargetFramework)' == 'banana' ">v10.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion Condition=" '$(TargetFramework)' == 'banana' ">9.0</TargetFrameworkVersion>
   </PropertyGroup>
 
   <ItemGroup>
