@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>vs2022</TargetFrameworks>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFrameworkIdentifier Condition=" '$(TargetFramework)' == 'vs2022' ">.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion Condition=" '$(TargetFramework)' == 'vs2022' ">v4.8</TargetFrameworkVersion>
+  </PropertyGroup>
+
+</Project>
