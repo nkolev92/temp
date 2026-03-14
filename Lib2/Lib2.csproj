@@ -1,23 +1,18 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>apple;banana</TargetFrameworks>
+    <TargetFrameworks>vs2022;vs2026_5</TargetFrameworks>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <SDKANalysisLevel>10.0.300</SDKANalysisLevel>
   </PropertyGroup>
 
   <PropertyGroup>
-    <TargetFrameworkIdentifier Condition=" '$(TargetFramework)' == 'apple' ">.NETCoreApp</TargetFrameworkIdentifier>
-    <TargetFrameworkVersion Condition=" '$(TargetFramework)' == 'apple' ">v10.0</TargetFrameworkVersion>
+    <TargetFrameworkIdentifier Condition=" '$(TargetFramework)' == 'vs2026_5' ">.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion Condition=" '$(TargetFramework)' == 'vs2026_5' ">v4.8</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup>
-    <TargetFrameworkIdentifier Condition=" '$(TargetFramework)' == 'banana' ">.NETCoreApp</TargetFrameworkIdentifier>
-    <TargetFrameworkVersion Condition=" '$(TargetFramework)' == 'banana' ">9.0</TargetFrameworkVersion>
+    <TargetFrameworkIdentifier Condition=" '$(TargetFramework)' == 'vs2022' ">.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion Condition=" '$(TargetFramework)' == 'vs2022' ">v4.8</TargetFrameworkVersion>
   </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="NuGet.Configuration" Version="6.4.20" Condition=" '$(TargetFramework)' == 'apple' "/>
-  </ItemGroup>
 
 </Project>
