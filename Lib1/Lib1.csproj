@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>apple;banana;net46</TargetFrameworks>
+    <TargetFrameworks>apple;banana</TargetFrameworks>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <SdkAnalysisLevel>10.0.300</SdkAnalysisLevel>
