@@ -8,6 +8,8 @@
   </PropertyGroup>
 
   <PropertyGroup>
+    <!-- <IncludeBuildOutput Condition=" '$(TargetFramework)' == 'apple' ">false</IncludeBuildOutput> -->
+    <SuppressDependenciesWhenPacking Condition=" '$(TargetFramework)' == 'banana' ">true</SuppressDependenciesWhenPacking>
     <TargetFrameworkIdentifier Condition=" '$(TargetFramework)' == 'apple' ">.NETCoreApp</TargetFrameworkIdentifier>
     <TargetFrameworkVersion Condition=" '$(TargetFramework)' == 'apple' ">v10.0</TargetFrameworkVersion>
   </PropertyGroup>
@@ -18,7 +20,10 @@
 
 
   <ItemGroup>
-    <PackageReference Include="NuGet.Configuration" Version="6.4.20" Condition=" '$(TargetFramework)' == 'apple' " />
+    <Content Include="Content.md" Condition=" '$(TargetFramework)' == 'banana' "/>
+    <PackageReference Include="NuGet.Common" Version="7.3.0" />
+    <PackageReference Include="NuGet.Versioning" Version="7.3.0" Condition=" '$(TargetFramework)' == 'apple' "/>
+    <ProjectReference Include="../Lib2/Lib2.csproj" Condition=" '$(TargetFramework)' == 'banana' "/>
   </ItemGroup>
 
 </Project>
