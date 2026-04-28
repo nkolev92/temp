@@ -111,11 +111,11 @@
       <AdditionalDependencies />
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
+  <!-- <ItemGroup>
     <ProjectReference Include="..\CPP\CPP.vcxproj">
       <Project>{ca05cdb8-b21e-45fc-8abf-2b91084b8a44}</Project>
     </ProjectReference>
-  </ItemGroup>
+  </ItemGroup> -->
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json">
       <Version>13.0.4</Version>

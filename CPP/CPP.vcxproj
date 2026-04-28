@@ -74,6 +74,10 @@
 
   <PropertyGroup Label="UserMacros" />
 
+  <ItemGroup>
+    <ProjectReference Include="..\Project2\Project2.vcxproj" />
+  </ItemGroup>
+
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
