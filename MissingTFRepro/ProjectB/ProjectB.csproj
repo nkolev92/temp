@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- Intentionally empty TargetFramework to trigger the bug -->
+    <TargetFramework></TargetFramework>
+  </PropertyGroup>
+
+</Project>
