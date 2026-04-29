@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <!-- Intentionally empty TargetFramework to trigger the bug -->
-    <TargetFramework></TargetFramework>
+    <TargetFramework>invalid</TargetFramework>
   </PropertyGroup>
 
 </Project>
