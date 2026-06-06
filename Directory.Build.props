@@ -1,0 +1,8 @@
+<Project>
+
+  <PropertyGroup>
+    <NuGetAuditMode>all</NuGetAuditMode>
+    <RestoreEnablePackagePruning>true</RestoreEnablePackagePruning>
+  </PropertyGroup>
+
+</Project>
